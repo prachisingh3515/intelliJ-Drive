@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Artificial Intelligence and Autonomous Vehicles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">intelliJ Drive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/appl.html">Applications</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/faq.html">FAQs</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <div class="row featurette my-5">
+        <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Sensor Data Processing <span
+                    class="text-body-secondary"></span></h2>
+            <p class="lead">There are numerous sensors providing data for the central computer of the vehicle during
+                operation. Sensors provide information for the road, other vehicles on the road as well as any other
+                impediments that can be noticed similarly to how a human can perceive them (Khayyam et al., 2019). Some
+                of these sensors can provide better perception than the average human, but for this to happen we need
+                smart algorithms that can make sense of the data streams generated in real time.
+                <br>
+                One of the main tasks is to detect and identify objects ahead and around the vehicle (Sagar and
+                Nanjundeswaraswamy, 2019). Artificial neural networks (ANN) are the algorithms typically used for this
+                task. Another term for this field is deep learning, because a neural network contains many layers that
+                contain many nodes.
+                <br>he analysis of video input uses machine learning algorithms and most likely neural networks in order
+                to classify objects. Since we have multiple sensors of different kind it makes sense to have dedicated
+                hardware/software modules for each sensor. This approach allows for parallel processing of data and
+                therefore faster decision making. Each sensor unit can utilize a different AI algorithm and then
+                communicate its results to the other units or the central processing computer.
+            </p>
+        </div>
+        <div class="col-md-5">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="500"
+                src="https://tse4.mm.bing.net/th?id=OIP.ADswh8tjfeyv9TavADC9iAHaEy&pid=Api&P=0&h=220">
+        </div>
+    </div>
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Path Planning <span class="text-body-secondary"></span></h2>
+            <p class="lead">Path planning is important in order to optimize the trajectory of the vehicle and to lead to
+                better traffic patterns. This can help reduce delays and avoid congestion on the road. Planning is a
+                very suitable task for artificial intelligence algorithms. It is a dynamic task that can take into
+                consideration a lot of factors and can solve an optimization problem while executing the path. The
+                following definition of path planning is given: ”path planning for AVs enables self-driving vehicles to
+                find the safest, most convenient, and most economically beneficial routes from point A to point B by
+                using the previous driving experiences which help the AI agent make much more accurate decisions in the
+                future”.<br>The majority of path-planning algorithms work well in simulations and laboratory robots, but
+                real- world robots operate in unknown surroundings and interact with other agents whose motion is often
+                unpredictable and whose conduct can be uncooperative. Real robots have inherent kinematical and
+                dynamical (kinodynamical) constraints that make autonomous collision-free motion impossible in
+                particular circumstances. </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="500"
+                src="https://tse3.mm.bing.net/th?id=OIP.fj_J4fW5JbuKPy-QQWwReQHaEK&pid=Api&P=0&h=220">
+        </div>
+    </div>
+    <div class="row featurette my-5">
+        <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Path Execution<span class="text-body-secondary"></span></h2>
+            <p class="lead">After the path is planned the vehicle is able to navigate the road conditions, by detecting
+                objects, pedestrians, bicycles and traffic lights in order to reach the destination. The object
+                detection algorithms are a primary focus of the AI community as they make it possible for human like
+                behavior. The challenges come when different road and weather conditions come into play. Many accidents
+                with testing vehicles happened because the simulation environment is different from the real world
+                conditions and the AI software may react unpredictably when given unknown data.<br>The main idea
+                underlying PRM, on the other hand, is to pick random samples from the robot's configuration space, test
+                them to see whether they are in the free space, and then use a local planner to connect these
+                configurations to other adjacent configurations.The beginning and goal configurations are brought in,
+                and the resulting graph is subjected to a graph search algorithm in order to find a path between them.
+                To assess the performance of the recommended approaches, simulations and experiments are carried out.
+            </p>
+        </div>
+        <div class="col-md-5">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="500"
+                src="https://tse3.mm.bing.net/th?id=OIP.ZLGvzU9n7Xz8UNzHbU88KgHaC4&pid=Api&P=0&h=220">
+        </div>
+    </div>
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Monitoring Vehicle’s Condition<span
+                    class="text-body-secondary"></span></h2>
+            <p class="lead">The most promising type of maintenance is predictive maintenance. It can be defined in the
+                following way: “Predictive maintenance employs monitoring and prediction modelling to determine the
+                condition of the machine and to predict what is likely to fail and when it is going to happen”.<br> It
+                tries to predict future problems, not problems that already exist. In this respect predictive
+                maintenance can save a lot of time and money. Both supervised and unsupervised learning can be used for
+                predictive maintenance.<br>The algorithms can use on-board and off-board data to make decision for
+                predictive maintenance. The machine learning algorithms used for this task are classification algorithms
+                like logistic regression, support vector machines and random forest algorithm.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="500"
+                src="https://www.alamy.com/aggregator-api/download?url=https://c8.alamy.com/comp/KXFFBJ/aiartificial-intelligence-and-automotive-technology-autonomous-car-KXFFBJ.jpg">
+        </div>
+    </div>
+    <div class="row featurette my-5">
+        <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Insurance Data Collection <span
+                    class="text-body-secondary"></span></h2>
+            <p class="lead">Data logs from a vehicle can contain information about the driver’s behavior and this can be
+                used in the analysis of traffic accidents. These data can be used for processing of claims.<br> All this
+                can contribute to decrease in prices for insurance, since the safety is more deterministic and
+                guaranteed. For fully automated cars the liability will shift from the passenger, who is no longer a
+                driver, to the manufacturer.<br> In the semi-autonomous vehicle, we will still most likely have some
+                liability of the driver. Proving these type of cases will rely more and more on smart data captured by
+                the AI system of the vehicle. Data from all sensors generates enormous amounts of information.<br>
+                Saving all the data at every moment may not be practical, but saving snapshots of relevant data seems
+                the right balance of obtaining evidence that could be used for post analysis of a certain traffic event.
+                This approach is similar to how black box information is stored and analyzed after a crash.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="500"
+                src="https://www.stealthlabs.com/wp-content/uploads/2021/07/five-crucial-aspects-of-autonomous-car-security.png">
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
